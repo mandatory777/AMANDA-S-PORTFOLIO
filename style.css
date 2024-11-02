@@ -1,0 +1,198 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #faf4ff; /* Soft lavender background */
+    color: #333; /* Dark grey for primary text */
+}
+
+/* Full-width Hero Section */
+#hero {
+    background: linear-gradient(135deg, #d5a6e4, #c8a2c8); /* Lavender gradient */
+    color: #ffffff;
+    padding: 80px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-content {
+    display: flex;
+    max-width: 900px;
+    width: 100%;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap; /* Stack elements on smaller screens */
+}
+
+.hero-image {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.hero-text {
+    max-width: 600px;
+}
+
+.hero-text h1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 2.8rem;
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+
+.hero-text p {
+    font-size: 1.2rem;
+    color: #e0e0e0;
+}
+
+/* Main Content Styling */
+main {
+    max-width: 1000px;
+    margin: -60px auto 0;
+    padding: 40px 20px;
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    position: relative;
+    z-index: 1;
+}
+
+/* Section Styling */
+section {
+    margin-bottom: 60px;
+    text-align: center;
+}
+
+section h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 2.2rem;
+    color: #c76ba2; /* Muted rose color for headings */
+    margin-bottom: 30px;
+    position: relative;
+    display: inline-block;
+}
+
+section h2::after {
+    content: '';
+    width: 50px;
+    height: 3px;
+    background: #c76ba2; /* Accent color under headings */
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* About Section */
+#about p {
+    max-width: 800px;
+    margin: 0 auto 30px;
+    line-height: 1.6;
+}
+
+#about img {
+    width: 100%;
+    max-width: 600px;
+    border-radius: 8px;
+    margin-top: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Skills and Portfolio Grid */
+.skills-grid, .portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Skill Card Styling */
+.skill-card {
+    background: #fdf2f8; /* Soft blush background for cards */
+    padding: 25px 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.skill-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+}
+
+/* Project Card Styling */
+.project-card {
+    background: #ffffff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-decoration: none;
+    color: #333;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+.project-card img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+}
+
+.project-info {
+    padding: 20px;
+    text-align: left;
+}
+
+.project-info h3 {
+    font-size: 1.2rem;
+    color: #c76ba2; /* Accent color for project title */
+    margin-bottom: 10px;
+}
+
+.project-info p {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.5;
+}
+
+/* Contact Links */
+.contact-links {
+    margin-top: 30px;
+}
+
+.contact-links a {
+    display: inline-block;
+    margin: 10px 15px;
+    padding: 12px 25px;
+    color: #ffffff;
+    background: #c76ba2; /* Rose pink for buttons */
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: background 0.3s ease;
+}
+
+.contact-links a:hover {
+    background: #a65480; /* Darker shade of rose pink for hover */
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    font-size: 0.9rem;
+    padding: 20px;
+    color: #666;
+}
